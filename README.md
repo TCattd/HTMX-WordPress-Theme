@@ -4,11 +4,11 @@ A demo/showcase of how to use HTMX in a WordPress theme, powered by [HTMX-API-WP
 
 <div align="center">
 
-[![HTMX API for WordPress Demo](https://img.youtube.com/vi/pDfg-pzhmyE/0.jpg)](https://www.youtube.com/watch?v=pDfg-pzhmyE "HTMX API for WordPress Demo")
+[![HTMX API for WordPress Demo](https://img.youtube.com/vi/6mrRA5QIcRw/0.jpg)](https://www.youtube.com/watch?v=6mrRA5QIcRw "HTMX API for WordPress Demo")
 
 <small>
 
-[Check the video](https://www.youtube.com/watch?v=pDfg-pzhmyE)
+[Check the video](https://www.youtube.com/watch?v=6mrRA5QIcRw)
 
 </small>
 
