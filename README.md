@@ -1,16 +1,16 @@
 # HTMX Theme for WordPress
 
-A demo/showcase of how to use HTMX in a WordPress theme, powered by <a href="https://github.com/TCattd/HTMX-API-WP">HTMX-API-WP plugin</a>.
+A demo/showcase of how to use HTMX in a WordPress theme, powered by [HTMX-API-WP plugin](https://github.com/TCattd/HTMX-API-WP).
 
 ## Installation
-Download the master branch ([master.zip]) from this repository, and <a href="https://wordpress.org/documentation/article/appearance-themes-screen/#install-themes" target="_blank">install it as a theme</a> in your WordPress installation.
+Download the [master branch zip](https://github.com/TCattd/HTMX-WordPress-Theme/archive/refs/heads/master.zip) from this repository, and [install it as a theme](https://wordpress.org/documentation/article/appearance-themes-screen/#install-themes) in your WordPress installation.
 
-Remember to have <a href="https://github.com/TCattd/HTMX-API-WP">HTMX-API-WP plugin</a> installed and activated before activating this theme.
+Remember to have [HTMX-API-WP plugin](https://github.com/TCattd/HTMX-API-WP) installed and activated before activating this theme.
 
 ## Now what?
 Check your WP front, and... try it. Then check the theme code, and... learn from it.
 
-Of course, learn how to use HTMX from the <a href="https://htmx.org/" target="_blank">HTMX documentation</a>.
+Of course, learn how to use HTMX from the [HTMX documentation](https://htmx.org).
 
 ## Suggestions, Support
 
