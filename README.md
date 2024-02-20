@@ -10,6 +10,8 @@ Remember to have <a href="https://github.com/TCattd/HTMX-API-WP">HTMX-API-WP plu
 ## Now what?
 Check your WP front, and... try it. Then check the theme code, and... learn from it.
 
+Of course, learn how to use HTMX from the <a href="https://htmx.org/" target="_blank">HTMX documentation</a>.
+
 ## Suggestions, Support
 
 Please, open [a discussion](https://github.com/TCattd/HTMX-WordPress-Theme/discussions).
