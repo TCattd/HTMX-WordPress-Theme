@@ -1,0 +1,17 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@picocss/pico':
+    specifier: ^2.0.3
+    version: 2.0.3
+
+packages:
+
+  /@picocss/pico@2.0.3:
+    resolution: {integrity: sha512-uIWvDcZnbA+oo4mpz8LeA05huCWbDnUz8Ad2NZXTFn6SrEXBtIdKDu+/bOD4oI8hJHp6dUEEvDLim2+qqSgruQ==}
+    engines: {node: '>=18.19.0'}
+    dev: true

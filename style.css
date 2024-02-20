@@ -1,0 +1,289 @@
+/*
+Theme Name: HTMX Theme for WordPress
+Description: A theme for showcasing HTMX features in WordPress. This theme requires the plugin HTMX-API-WP to work.
+Author: Esteban Cuevas
+Author URI: https://actitud.xyz
+Theme URI: https://github.com/TCattd/HTMX-WordPress-Theme
+Version: 1.0.0
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hxtheme
+*/
+
+/* WordPress */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+	margin-bottom: 1em;
+}
+
+li {
+	list-style: square;
+	margin: 0.5em 0 0 2em;
+}
+
+dt {
+	margin: 1em 0;
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
+}
+
+th,
+td {
+	padding: 0.5em;
+	border: 1px solid #ddd;
+}
+
+blockquote {
+	margin: 0 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
+}
+
+pre {
+	font-family: monospace;
+	background: #f8f8ff;
+	padding: 0.5em;
+	overflow: auto;
+}
+
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	position: relative;
+	font-size: 10px;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: 0.5ex;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	color: #111;
+}
+
+a {
+	color: #111;
+}
+
+p {
+	line-height: 1.3em;
+}
+
+h1 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+h1 a:hover {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+#container {
+	width: 768px;
+	margin: 2em auto;
+}
+
+#header #description {
+	margin-top: -1.5em;
+}
+
+#header li {
+	display: inline;
+	margin: 0 0.5em 0 0;
+}
+
+#content {
+	margin-top: 4em;
+}
+
+.hentry,
+.meta,
+#respond {
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ddd;
+}
+
+.hentry h2,
+.hentry h3,
+.hentry h4 {
+	margin-top: 2em;
+}
+
+.widgets {
+	margin-bottom: 2em;
+	border-bottom: 1px solid #ddd;
+}
+
+.widget {
+	margin-bottom: 2em;
+}
+
+.pagination {
+	text-align: center;
+	margin: 2em auto 1em auto;
+}
+
+.pagination a {
+	padding: 3px 8px;
+	border: 1px solid #ddd;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+.aligncenter {
+	display: block;
+	margin: 1em auto;
+}
+
+.wp-caption {
+	text-align: center;
+	padding: 0.5em;
+	background: #ddd;
+}
+
+.wp-caption-text,
+.gallery-caption {
+	font-size: 0.7em;
+	margin: 3px 0;
+}
+
+#comments {
+	margin-bottom: 2em;
+	border-bottom: 1px solid #ddd;
+}
+
+#comments h3,
+#respond h3 {
+	margin-bottom: 2em;
+}
+
+#comments li {
+	list-style-type: none;
+	margin: 0 0 2em 0;
+}
+
+#comments .avatar {
+	vertical-align: middle;
+	margin-right: 2px;
+	padding: 2px;
+	border: 1px solid #ddd;
+}
+
+#comments .comment-author {
+	margin-bottom: 1em;
+}
+
+#comments .comment-author cite {
+	font-weight: bold;
+	font-style: normal;
+	margin-top: 1em;
+}
+
+#comments .comment-meta {
+	margin-bottom: 1em;
+}
+
+#comments .reply a {
+	font-size: 0.7em;
+}
+
+#comments .children {
+	margin: 2em;
+}
+
+#comments .pagination {
+	margin-bottom: 2em;
+}
+
+#respond label {
+	display: block;
+}
+
+#respond .required {
+	display: none;
+}
+
+#respond #closed {
+	font-style: italic;
+}
+
+#comments li.comment #respond {
+	margin: 2em;
+}
+
+#comments li.comment #respond h3 {
+	padding-top: 2em;
+	border-top: 1px solid #ddd;
+}
+
+#comments li.comment #respond #cancel-comment-reply-link {
+	font-size: 0.7em;
+	margin-left: 1em;
+}
