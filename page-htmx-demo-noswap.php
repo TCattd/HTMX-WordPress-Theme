@@ -45,6 +45,7 @@ $hxtheme_data = $wp_query->hxtheme_data;
 		<p>
 			<?php _e('In this example, a browser alert will show the message from the response.', 'hxtheme'); ?>
 		</p>
+	</section>
 </main>
 <?php
 get_footer();

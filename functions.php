@@ -47,6 +47,8 @@ function hxtheme_setup()
 	add_theme_support('post-thumbnails');
 	add_theme_support('html5', ['comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script']);
 	add_theme_support('title-tag');
+
+	do_action('hxtheme/setup/end');
 }
 
 /**
@@ -168,6 +170,11 @@ if (!function_exists('hxtheme_header_nav')) {
 		<ul>
 			<li><a href="<?php echo esc_url(home_url('/')); ?>"><?php _e('Home', 'hxtheme'); ?></a></li>
 			<?php
+			// If WooCommerce is activated, add a link to the shop
+			if (class_exists('WooCommerce')) {
+				echo '<li><a href="' . esc_url(wc_get_page_permalink('shop')) . '">' . __('Shop', 'hxtheme') . '</a></li>';
+			}
+
 			if (isset($hxtheme_options['demos']) && is_array($hxtheme_options['demos'])) {
 				foreach ($hxtheme_options['demos'] as $slug => $demo) {
 					$url = esc_url(home_url('/' . $slug . '/'));

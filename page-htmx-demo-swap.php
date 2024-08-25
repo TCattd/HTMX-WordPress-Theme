@@ -21,6 +21,7 @@ $hxtheme_data = $wp_query->hxtheme_data;
 			<code><?php _e('Kansas is going bye-bye', 'hxtheme'); ?></code>
 		</div>
 		</p>
+	</section>
 </main>
 <?php
 get_footer();
