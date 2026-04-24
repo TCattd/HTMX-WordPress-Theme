@@ -41,8 +41,8 @@ function hxtheme_get_options()
 add_action('after_switch_theme', 'hxtheme_activation');
 function hxtheme_activation()
 {
-    // Check if HTMX-API-WP plugin is present and activated
-    if (!function_exists('hm_get_endpoint_url')) {
+    // Check if HyperPress plugin is present and activated
+    if (!function_exists('hp_get_endpoint_url')) {
         // Deactivate theme, go back to default
         switch_theme(WP_DEFAULT_THEME);
 
@@ -105,8 +105,8 @@ function hxtheme_header_meta()
     do_action('hxtheme/header_meta/start');
 
     // Respect HyperPress preferred library; only output HTMX meta when HTMX is active
-    $hmapi_options   = get_option('hmapi_options', []);
-    $active_library  = isset($hmapi_options['active_library']) ? $hmapi_options['active_library'] : 'htmx';
+    $hyperpress_options   = get_option('hyperpress_options', []);
+    $active_library  = isset($hyperpress_options['active_library']) ? $hyperpress_options['active_library'] : 'htmx';
     if ($active_library !== 'htmx') {
         do_action('hxtheme/header_meta/skip', $active_library);
         return;

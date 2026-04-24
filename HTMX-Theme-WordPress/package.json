@@ -1,0 +1,16 @@
+{
+	"name": "Hypermedia-Theme-WordPress",
+	"author": "Esteban Cuevas",
+	"license": "GPL-2.0-only",
+	"version": "2.0.2",
+	"description": "A theme for showcasing HyperPress over WordPress. Requires HyperPress plugin installed and activated.",
+	"keywords": [],
+	"main": "index.js",
+	"scripts": {
+		"update-picocss": "cp -r node_modules/@picocss/pico/css/pico.min.css assets/css/",
+		"postinstall": "npm run update-picocss"
+	},
+	"devDependencies": {
+		"@picocss/pico": "^2.0.3"
+	}
+}
