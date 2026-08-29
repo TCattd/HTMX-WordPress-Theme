@@ -112,12 +112,17 @@ function hxtheme_header_meta()
         return;
     }
 
-    $htmx_timeout           = apply_filters('hxtheme/meta/timeout', 60000);
-    $htmx_globalTransitions = apply_filters('hxtheme/meta/globalTransitions', 'true'); // we need a string here
+    $htmx_timeout     = apply_filters('hxtheme/meta/timeout', 60000);
+    $htmx_transitions = apply_filters('hxtheme/meta/transitions', true);
+    $htmx_logAll      = apply_filters('hxtheme/meta/logAll', defined('WP_DEBUG') && WP_DEBUG);
 
+    // htmx 4 config keys: timeout -> defaultTimeout,
+    // globalViewTransitions -> transitions. WP_DEBUG maps to logAll, the
+    // v4 replacement for the removed debug extension.
     $htmx_config = apply_filters('hxtheme/meta/config', [
-        'timeout'               => $htmx_timeout,
-        'globalViewTransitions' => $htmx_globalTransitions,
+        'defaultTimeout' => $htmx_timeout,
+        'transitions'    => $htmx_transitions,
+        'logAll'         => $htmx_logAll,
     ]);
 
     do_action('hxtheme/header_meta/before_render');
@@ -130,44 +135,11 @@ function hxtheme_header_meta()
 }
 
 /**
- * HTMX global extensions
- *
- * @return void
- */
-function hxtheme_global_extensions()
-{
-    do_action('hxtheme/global_extensions/start');
-
-    $htmx_ext = [
-        //'head-support',
-        //'method-override',
-        //'morphdom-swap',
-        //'multi-swap',
-        //'preload',
-        //'remove-me',
-        //'path-params',
-    ];
-
-    // Check if WP DEBUG is enabled
-    if (defined('WP_DEBUG') && WP_DEBUG) {
-        $htmx_ext[] = 'debug';
-    }
-
-    apply_filters('hxtheme/global_extensions/array', $htmx_ext);
-
-    do_action('hxtheme/global_extensions/end', $htmx_ext);
-
-    if (empty($htmx_ext) || !is_array($htmx_ext)) {
-        return;
-    }
-
-    // comma separated list of extensions
-    echo ' hx-ext="' . implode(',', $htmx_ext) . '" ';
-}
-
-/**
  * HTMX global boost
  * Enables HTMX boost feature. See https://htmx.org/attributes/hx-boost/
+ *
+ * htmx 4 does not inherit attributes implicitly: body-level boosting needs
+ * the :inherited modifier so descendant links and forms are boosted.
  *
  * @return void
  */
@@ -181,7 +153,7 @@ function hxtheme_global_boost()
     //$boost = false;
 
     if ($boost === true) {
-        echo ' hx-boost="true" ';
+        echo ' hx-boost:inherited="true" ';
     }
 }
 

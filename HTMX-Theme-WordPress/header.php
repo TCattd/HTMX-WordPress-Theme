@@ -17,7 +17,7 @@ if (has_custom_logo()) {
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> <?php hxtheme_global_extensions(); ?> <?php hxtheme_global_boost(); ?>>
+<body <?php body_class(); ?> <?php hxtheme_global_boost(); ?>>
 	<?php wp_body_open(); ?>
 
 	<header class="container">

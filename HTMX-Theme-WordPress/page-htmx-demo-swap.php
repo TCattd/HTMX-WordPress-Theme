@@ -17,10 +17,10 @@ $hxtheme_data = $wp_query->hxtheme_data;
 			<button id="trigger-demo"
 					hx-get="<?php echo hm_get_endpoint_url($hxtheme_data['path']); ?>"
 					hx-vals='{"action": "demo"}'
-					hx-headers='{"X-WP-Nonce": "<?php echo wp_create_nonce('hmapi_nonce'); ?>"}'
+					hx-headers='{"X-WP-Nonce": "<?php echo wp_create_nonce('hyperpress_nonce'); ?>"}'
 					hx-swap="innerHTML"
 					hx-target="#hxtheme-demo-swap"
-					hx-disabled-elt="this">
+					hx-disable="this">
 				<?php esc_html_e('Click to swap with response', 'hxtheme'); ?>
 			</button>
 		</p>
